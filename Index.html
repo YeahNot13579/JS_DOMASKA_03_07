@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>bootstrap Components</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:300,400,700i&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <script>
+                // 1 Подсчитать сумму всех чисел в заданном пользователем
+                // диапазоне.
+        
+                //     var a;
+                // a = parseInt(prompt('a'));
+                // var b;
+                // b = parseInt(prompt('b'));
+                //
+                // function sum_c(a,b) {
+                //     var sum=0;
+                //     for(var i=a;i<b;i++) {
+                //         sum += i;
+                //     }
+                //     return sum;
+                // }
+                // document.write(sum_c(a,b));
+        
+                // Запросить 2 числа и найти только наибольший общий
+                // делитель.
+        
+                // var a;
+                // a = parseInt(prompt('a'));
+                //  var b;
+                //  b = parseInt(prompt('b'));
+                //  function big_del(a,b) {
+                //
+                //      var i=a > b ? a : b;
+                //      while (true){
+                //          if(a%i==0&&b%i==0)
+                //              break;
+                //          i--;
+                //      }
+                //      return i;
+                //  }
+                //  document.write(big_del(a,b));
+        
+                // 3. Запросить у пользователя число и вывести все делители
+                // этого числа.
+        
+                // var a;
+                //  a = parseInt(prompt('a'));
+                //  function all_dell(a) {
+                //      var arr=[];
+                //      for(var i=a;i>=0;i--)
+                //      {
+                //          if(a%i==0)
+                //              arr.push(i);
+                //      }
+                //      return arr;
+                //  }
+                // document.write(all_dell(a));
+        
+                // 4. Определить количество цифр в введенном числе
+        
+                // var a;
+                //  a = prompt('a');
+                // function getlength(a) {
+                //     return a.toString().length;
+                // }
+                // document.write(getlength(a));
+        
+                // 5. Запросить у пользователя 10 чисел и подсчитать, сколько
+                // он ввел положительных, отрицательных и нулей. При этом
+                // также посчитать, сколько четных и нечетных. Вывести
+                // статистику на экран. Учтите, что достаточно одной переменной
+                // (не 10) для ввода чисел пользователем.
+        
+                // var counter_plus=0;
+                // var counter_minus=0;
+                // var counter_zero=0;
+                // var counter_chetnoe=0;
+                // var counter_nechetnoe=0;
+                // for(var i=0;i<10;i++)
+                // {
+                //     var number=parseInt(prompt('numb'));
+                //     if(number>0)
+                //         counter_plus++;
+                //     if(number%2==0)
+                //         counter_chetnoe++;
+                //     if(number%2!=0)
+                //         counter_nechetnoe++;
+                //     if(number==0)
+                //         counter_zero++;
+                //     if(number<0)
+                //         counter_minus++;
+                // }
+                // document.write(counter_plus,counter_minus,counter_zero,counter_chetnoe,counter_nechetnoe);
+        
+                // 6. Зациклить калькулятор. Запросить у пользователя 2 числа
+                // и знак, решить пример, вывести результат и спросить, хочет
+                // ли он решить еще один пример. И так до тех пор, пока
+                // пользователь не откажется.
+        
+                // do {
+                //     var a;
+                //     a = parseInt(prompt('a'));
+                //     var b;
+                //     b = parseInt(prompt('b'));
+                //     var znak = prompt('znak');
+                //
+                //     function calc(a, b, znak) {
+                //         var sum = 0;
+                //         if (znak == '+')
+                //             sum = a + b;
+                //         if (znak == '-')
+                //             sum = a - b;
+                //         if (znak == '*')
+                //             sum = a * b;
+                //         if (znak == '/')
+                //             sum = a / b;
+                //         return sum;
+                //     }
+                //     var res = calc(a,b,znak);
+                //     alert(`${a} + ${b} = ${res}`);
+                // } while (confirm('eshe?'))
+        
+                // 7. Запросить у пользователя число и на сколько цифр его
+                // сдвинуть. Сдвинуть цифры числа и вывести результат (если
+                // число 123456 сдвинуть на 2 цифры, то получится 345612).
+        
+                // var number=prompt('number');
+                // var shift=parseInt(prompt('shift'));
+                // function shift_number(number,shift) {
+                //     var arr = [];
+                //     var numb = number + "";
+                //
+                //     for(var i=0;i<numb.length;i++)
+                //         arr.push(numb[i]);
+                //
+                //     for(var i=0;i<shift;i++)
+                //         arr.push(arr[i]);
+                //
+                //     for(var i=0;i<shift;i++)
+                //         arr.shift(arr[i]);
+                //
+                //     return arr;
+                //
+                // } document.write(shift_number(number,shift));
+        
+                //     8. Зациклить вывод дней недели таким образом: «День недели.
+                //         Хотите увидеть следующий день?» и так до тех пор, пока
+                //     пользователь нажимает OK.
+                //
+        
+        
+                //     var days = ['пн','вт','ср','чт','пт','сб','вс'];
+                //     function toDay ()
+                //     {
+                //         do{
+                //             alert(days[0]);
+                //             days.push(days[0]);
+                //             days.shift(days[0]);
+                //         }
+                //         while (confirm('Хотите увидеть следующий день?'))
+                //     }
+                // toDay();
+        
+        
+        
+                //     9. Вывести таблицу умножения для всех чисел от 2 до 9.
+                //     Каждое число необходимо умножить на числа от 1 до 10.
+                //
+                var tabl=[2,3,4,5,6,7,8,9];
+                var tabl2=[1,2,3,4,5,6,7,8,9,10];
+                function tabl_um() {
+                    
+                    for(let i=0;i<tabl.length;i++)
+                    {
+                        for(let y=0;y<tabl2.length;y++)
+                        {
+                            let sum=tabl[i]*tabl2[y];
+                            document.write(`${tabl[i]}*${tabl2[y]}=${sum} <br>`);
+                        }
+                    }
+                }
+                tabl_um();
+
+        
+                //     10. Игра «Угадай число». Предложить пользователю загадать
+                //     число от 0 до 100 и отгадать его следующим способом:
+                //         каждую итерацию цикла делите диапазон чисел пополам,
+                //         записываете результат в N и спрашиваете у пользователя
+                // «Ваше число > N, < N или == N?». В зависимости от того
+                //     что указал пользователь, уменьшаете диапазон. Начальный
+                //     диапазон от 0 до 100, поделили пополам и получили 50.
+                //     Если пользователь указал, что его число > 50, то изменили
+                //     диапазон на от 51 до 100. И так до тех пор, пока пользователь
+                //     не выберет == N.
+        
+     </script>
+</body>
+</html>
